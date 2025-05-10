@@ -1,0 +1,68 @@
+Microsoft Windows [Version 10.0.26100.3915]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Public>mddir git_challenge
+'mddir' は、内部コマンドまたは外部コマンド、
+操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+
+C:\Users\Public>mkdir git_challenge
+
+C:\Users\Public>cd C:\Users\Public\git_challenge
+
+C:\Users\Public\git_challenge>echo Hello, world! > hello_world.txt
+
+C:\Users\Public\git_challenge>git init
+Initialized empty Git repository in C:/Users/Public/git_challenge/.git/
+
+C:\Users\Public\git_challenge>git add hello_world.txt
+
+C:\Users\Public\git_challenge>git commit -m "課題"
+[main (root-commit) a364207] 課題
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+C:\Users\Public\git_challenge>こんにちは、世界！ >> hello_world.txt
+'こんにちは、世界！' は、内部コマンドまたは外部コマンド、
+操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+
+C:\Users\Public\git_challenge>echo こんにちは、世界！ >> hello_world.txt
+
+C:\Users\Public\git_challenge>echo こんにちは、世界！ >> hello_world.txt
+
+C:\Users\Public\git_challenge>dir
+ ドライブ C のボリューム ラベルは Local Disk です
+ ボリューム シリアル番号は 6A38-006C です
+
+ C:\Users\Public\git_challenge のディレクトリ
+
+2025/05/10  23:15    <DIR>          .
+2025/05/10  23:13    <DIR>          ..
+2025/05/10  23:20                39 hello_world.txt
+               1 個のファイル                  39 バイト
+               2 個のディレクトリ  40,686,542,848 バイトの空き領域
+
+C:\Users\Public\git_challenge>type hello_world.txt
+Hello, world!
+
+こんにちは、世界！
+
+C:\Users\Public\git_challenge>git add hello_world.txt
+
+C:\Users\Public\git_challenge>git commit -m "追記"
+[main 66c11b1] 追記
+ 1 file changed, 2 insertions(+)
+
+C:\Users\Public\git_challenge>git log
+commit 66c11b1faaf38c5142122a07b62212ec6bf703e3 (HEAD -> main)
+Author: yuu-kuguhara <you20010819@gmail.com>
+Date:   Sat May 10 23:23:07 2025 +0900
+
+    追記
+
+commit a3642078e6a494e64b88ddab73ce8e9f968e2da5
+Author: yuu-kuguhara <you20010819@gmail.com>
+Date:   Sat May 10 23:16:40 2025 +0900
+
+    課題
+
+C:\Users\Public\git_challenge>
